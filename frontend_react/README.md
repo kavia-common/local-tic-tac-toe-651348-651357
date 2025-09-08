@@ -1,82 +1,35 @@
-# Lightweight React Template for KAVIA
+# Violet Dreams Tic Tac Toe (React)
 
-This project provides a minimal React template with a clean, modern UI and minimal dependencies.
+A modern, accessible, and responsive local two-player Tic Tac Toe game built with React and styled using the Violet Dreams theme (violet + teal highlights, subtle gradients, clean surfaces, and rounded corners).
 
 ## Features
+- Local two-player gameplay with live updates
+- Win/lose/draw detection with winning line highlight
+- Reset button below the board
+- Accessible: ARIA labels, live region updates, keyboard focus support
+- Responsive layout with a central board and polished UI
 
-- **Lightweight**: No heavy UI frameworks - uses only vanilla CSS and React
-- **Modern UI**: Clean, responsive design with KAVIA brand styling
-- **Fast**: Minimal dependencies for quick loading times
-- **Simple**: Easy to understand and modify
+## Scripts
+- `npm start` — Development server at http://localhost:3000
+- `npm test` — Run unit tests
+- `npm run build` — Production build
 
-## Getting Started
+## Styling
+- Theme variables and most styles are defined in `src/App.css`
+- Minimal base resets in `src/index.css`
+- Primary color: `#7C3AED`
+- Secondary (teal): `#0D9488`
+- Error: `#EF4444`
+- Background: `#f9fafb`
+- Surface: `#ffffff`
+- Text: `#111827`
+- Gradient accent: `from-violet-500/10 to-gray-50` (implemented via subtle linear/radial backgrounds)
 
-In the project directory, you can run:
+## How to Play
+- X starts. Players alternate by clicking an empty square.
+- First to align three marks (row, column, or diagonal) wins.
+- Click "Reset Game" to start a new match.
 
-### `npm start`
-
-Runs the app in development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-### `npm test`
-
-Launches the test runner in interactive watch mode.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-## Customization
-
-### Colors
-
-The main brand colors are defined as CSS variables in `src/App.css`:
-
-```css
-:root {
-  --kavia-orange: #E87A41;
-  --kavia-dark: #1A1A1A;
-  --text-color: #ffffff;
-  --text-secondary: rgba(255, 255, 255, 0.7);
-  --border-color: rgba(255, 255, 255, 0.1);
-}
-```
-
-### Components
-
-This template uses pure HTML/CSS components instead of a UI framework. You can find component styles in `src/App.css`. 
-
-Common components include:
-- Buttons (`.btn`, `.btn-large`)
-- Container (`.container`)
-- Navigation (`.navbar`)
-- Typography (`.title`, `.subtitle`, `.description`)
-
-## Learn More
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Notes
+- No environment variables required.
+- No external UI libraries used; pure React + CSS for performance and clarity.
